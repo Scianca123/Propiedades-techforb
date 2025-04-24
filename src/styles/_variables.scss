@@ -2,14 +2,13 @@
 $font-heading: "Poppins", sans‑serif;
 $font-body: "Montserrat", sans‑serif;
 
-
+//sizes 
 $line-height: 1.15;
 $font-weight: 400;
+$size-title-h2:28px;
+$font-weight-button: 600;
 
-
-// 2. PALETA DE COLORES
-
-
+// PALETA DE COLORES
 $color-default: #365196;
 $color-default-hover: rgb(47, 44, 148);
 // $color-default-press: #161041;
@@ -18,14 +17,12 @@ $color-default-disabled: rgba(46, 36, 115, 0.3);
 $color-background: #F8F9FB;
 $color-logo:#FCFCFC;
 
-
-$radius-base: 4px;
-$transition-base: 0.2s ease-in-out;
-
-
+$color-black:#020202;
+$color-pink:#F5F7FA;
 $color-green: #04d9b2;
 $color-red: #cb4141;
 $color-dark: #1f2937;
+$color-gray-primary:#8A8A8A;
 $color-dark-gray: #4b5563;
 $color-gray-100: #f2f2f2;
 $color-gray-200: #d1d5db;
@@ -36,3 +33,14 @@ $color-background: #fcfcfc;
 $color-success: #28a745;
 $color-error: #cb4141;
 $color-warning: #ffc107;
+
+//Radius
+
+$radius-base: 5px;
+$radius-button-secondary:35px;
+
+//transition
+
+$transition-base: 0.2s ease-in-out;
+
+
