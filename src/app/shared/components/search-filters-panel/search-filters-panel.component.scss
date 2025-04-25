@@ -4,29 +4,31 @@
     position: relative;
     z-index: 3;
     gap:8px;
-   
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center; 
 
     &__input-keysWord{
         width: 400px;
         border-radius: $radius-base;
         font-family: $font-heading;
+        background-color:$color-logo;
         border: none;
         box-shadow: none;
         padding-left: 35px;
         outline: none;
-        font-size: medium;
+        font-size: 11px;
     }
     &__selects{
+        background: url('/assets/iconos/iconSelects.svg') no-repeat right 10px center;
+        background-position: right 10px center;
         border-radius: $radius-base;
         font-family: $font-heading;
-        padding: 15px;
-        // &--placeholder{
-        //     color: $color-gray-primary;
-        // }
-        &:not(:valid) {
-            color: $color-gray-primary;
-          }
-        
-          
+        background-color:$color-logo; 
+        font-size: 11px;
+        padding-left: 10px;
+        padding-right: 30px;
+        appearance: none;
+       
     }
 }

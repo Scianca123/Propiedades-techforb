@@ -3,6 +3,9 @@
     position: relative;
     display: flex;
     width: auto;
+    min-width: 200px;
+    height: 100%;
+    min-height: 44px;
     border-radius: $radius-base;
     background-color: $color-pink;
     overflow: hidden;
@@ -26,9 +29,9 @@
   
     &__bar {
       position: absolute;
-      bottom: 10px;
+      bottom: 17%;
       height: 5px;
-      width: 120px;
+      width: 39%;
       border-radius: 5px;
       background-color: #1976d2;
       transition: left 0.3s ease;

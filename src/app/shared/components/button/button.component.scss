@@ -7,7 +7,6 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-    min-width: 100px;
     border-radius:4px;
     transition: all $transition-base;
     cursor: pointer;
@@ -23,6 +22,7 @@
       }
    
       &__label {
+        display: contents;
         white-space: nowrap;
       }
 
@@ -38,6 +38,7 @@
   }
  
   &--secondary {
+    min-width: 100px;
     background-color: transparent;
     color: $color-white;
     border: 2px solid $color-white;
@@ -49,6 +50,7 @@
   }
 
   &--terciario {
+    min-width: 100px;
     background-color: transparent;
     color: $color-white;
     border:none;
@@ -62,7 +64,10 @@
     border-color: $color-black;
   }
   &--light{
-      
+    background-color: $color-logo;
+    &:hover:not(.btn--disabled) {
+      background-color: $color-white;
+    }
   }
   &--of{
     color: $color-gray-primary;
