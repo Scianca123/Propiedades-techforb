@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { Property } from '../../../features/properties/interfaces/property';
 
 @Component({
   selector: 'app-card',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-
+  property=input.required<Property>();
 }
