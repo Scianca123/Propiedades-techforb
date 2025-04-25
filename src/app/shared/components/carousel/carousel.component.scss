@@ -1,0 +1,12 @@
+.caroucel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__container{
+        display: flex;
+        gap: 38px;
+        max-width: 100%;
+        overflow: hidden;
+        margin-bottom: 100px;
+    }
+}

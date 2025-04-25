@@ -1,1 +1,19 @@
-<p>card works!</p>
+<div class="card">
+    <div class="card__imgContainer">
+        <img src={{property().img}} alt="" class="card__img" />
+    </div>
+    <div class="card__title">
+        <h4 class="card__title__text">
+            {{property().titulo}}
+        </h4>
+        <label for="" class="card__title__price">
+            USD {{property().price}}
+        </label>
+    </div>
+    <div class="card__detailsContainer">
+        <div class="card__detailsContainer__detail"><span class="card__detailsContainer__detail__number">1</span></div>
+        <div class="card__detailsContainer__detail"><span class="card__detailsContainer__detail__number">2</span></div>
+        <div class="card__detailsContainer__detail"><span class="card__detailsContainer__detail__number">{{property().squareMeters}}</span></div>
+    </div>
+   
+</div>

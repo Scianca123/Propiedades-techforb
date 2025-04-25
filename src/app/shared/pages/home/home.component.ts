@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from '../../components/header/header.component';
 import { MainSectionComponent } from '../../components/main-section/main-section.component';
 import { CarouselComponent } from '../../components/carousel/carousel.component';
+import { DbServiceService } from '../../utils/servicesJsons/db-service.service';
+import { Property } from '../../../features/properties/interfaces/property';
 
 @Component({
   selector: 'app-home',
@@ -10,5 +12,17 @@ import { CarouselComponent } from '../../components/carousel/carousel.component'
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+  propertis: Property[] =[];
 
+  constructor(private dbService:DbServiceService){}
+
+  // onInit(){
+  //   this.dbService.getAllDepartaments().subscribe((data:Property[])=>{{
+  //     this.properties=data;
+  //   }})
+  // }
+
+  getAllDepartaments():Property[]{
+    return this.dbService.getAllDepartaments();
+  }
 }
