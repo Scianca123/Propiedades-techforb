@@ -1,13 +1,18 @@
 @import '../../../../styles/variables';
-.dotspager{
-    background-color: $color-turquoise;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    &--selected{
+.dotspager {
+    display: flex;
+    gap: 10px; 
+  
+    &__dot {
+      background-color: $color-turquoise;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &--selected {
         background-color: $color-default;
+      }
     }
-    &__pages{
-      
-    }
-}
+  }
