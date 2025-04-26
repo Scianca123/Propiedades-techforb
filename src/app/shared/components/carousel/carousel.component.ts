@@ -12,8 +12,8 @@ import { Property } from '../../../features/properties/interfaces/property';
 export class CarouselComponent {
   properties=input.required<Property[]>();
   visibleProperties: Property[] = [];
-  itemsPerPage: number = 1;
-  currentPage: number = 1;
+  itemsPerPage: number = 4;
+  currentPage: number = 0;
 
   ngOnChanges(): void {
     this.updateVisibleProperties();
@@ -25,7 +25,7 @@ export class CarouselComponent {
   }
 
   private updateVisibleProperties(): void {
-    const startIndex = (this.currentPage - 1) * this.itemsPerPage;
+    const startIndex = this.currentPage * this.itemsPerPage;
     this.visibleProperties = this.properties().slice(startIndex, startIndex + this.itemsPerPage);
   }
 }

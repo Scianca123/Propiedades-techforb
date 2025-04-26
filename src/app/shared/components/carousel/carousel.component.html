@@ -4,5 +4,5 @@
             <app-card [property]="property"></app-card> 
         }   
     </div>
-    <app-dotspager></app-dotspager>
+    <app-dotspager [itemsPerPage]="itemsPerPage" [totalItems]="properties().length"  (pageChange)="onPageChange($event)"></app-dotspager>
 </div>

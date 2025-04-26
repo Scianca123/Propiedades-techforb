@@ -16,13 +16,12 @@ export class HomeComponent {
 
   constructor(private dbService:DbServiceService){}
 
-  // onInit(){
-  //   this.dbService.getAllDepartaments().subscribe((data:Property[])=>{{
-  //     this.properties=data;
-  //   }})
-  // }
 
   getAllDepartaments():Property[]{
     return this.dbService.getAllDepartaments();
   }
+  getAllBuildings():Property[]{
+    return this.dbService.getAllBuildings();
+  }
+
 }

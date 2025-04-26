@@ -6,4 +6,7 @@ export interface Property {
     state:'En construccion'|'Terminado';
     price:number;
     img:string;
+    numberOfBedrooms:number|undefined;
+    numberOfBathroomsNumber:number|undefined;
+    numberOfDepartaments:number |undefined;
 }

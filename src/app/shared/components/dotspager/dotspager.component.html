@@ -1,1 +1,9 @@
-<p>dotspager works!</p>
+   <!-- <div class="dotspager"> -->
+    @for(page of pages; track page ) {
+            <div class="dotspager"
+            [class.dotspager--selected]="page === currentPage"
+            (click)="onClick(page)"
+            >
+            </div>
+        }
+   <!-- </div>      -->

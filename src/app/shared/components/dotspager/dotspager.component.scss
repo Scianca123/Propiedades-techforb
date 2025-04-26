@@ -1,0 +1,13 @@
+@import '../../../../styles/variables';
+.dotspager{
+    background-color: $color-turquoise;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    &--selected{
+        background-color: $color-default;
+    }
+    &__pages{
+      
+    }
+}

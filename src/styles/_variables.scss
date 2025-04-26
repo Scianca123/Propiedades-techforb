@@ -10,6 +10,7 @@ $font-weight-button: 600;
 $font-weight-h1: 600;
 $font-size-h1:36px;
 $font-size-number-details:7.8px;
+$fonr-size-state-details:6px;
 
 // PALETA DE COLORES
 $color-default: #365196;
@@ -21,6 +22,7 @@ $color-background: #F6F7F9;
 $color-logo:#FCFCFC;
 $color-label-gray:#838383;
 $color-background-light:#F8F9FB;
+$color-turquoise:#EDF4FF;
 
 $color-black:#020202;
 $color-pink:#F5F7FA;
@@ -32,7 +34,7 @@ $color-dark-gray: #4b5563;
 $color-gray-100: #f2f2f2;
 $color-gray-200: #d1d5db;
 $color-gray-300: #F6F5F6;
-$color-background: #fcfcfc;
+// $color-background: #fcfcfc;
 
 
 $color-success: #28a745;
@@ -49,6 +51,10 @@ $radius-button-secondary:35px;
 $transition-base: 0.2s ease-in-out;
 
 //Box shadow
-$box-shadow-card:0px 15.95px 15.95px rgba(106, 106, 106, 0.1);
+$box-shadow-card:0px 4.16px 8.32px rgba(106, 100, 166, 0.1),
+                 0px 15.95px 15.95px rgba(106, 100, 166, 0.09),
+                 0px 35.37px 20.8px rgba(106, 100, 166, 0.05),
+                 0px 62.41px 24.97px rgba(106, 100, 166, 0.01),
+                 0px 97.78px 24.74px rgba(106, 100, 166, 0);
 
 

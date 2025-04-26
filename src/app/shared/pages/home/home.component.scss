@@ -11,13 +11,13 @@
         font-size: $font-size-h1;
         max-width: 500px;
         text-align: center;
-        color:$color-black;
+        color:#222222;
     }
     &__label{
         font-weight: $font-weight;
         font-family: $font-body;
         font-size: 16px;
         color: $color-label-gray;
-        margin-bottom: 90px;
+        margin-bottom: 80px;
     }
 }

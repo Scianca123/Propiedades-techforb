@@ -11,9 +11,16 @@
         </label>
     </div>
     <div class="card__detailsContainer">
-        <div class="card__detailsContainer__detail"><span class="card__detailsContainer__detail__number">1</span></div>
-        <div class="card__detailsContainer__detail"><span class="card__detailsContainer__detail__number">2</span></div>
-        <div class="card__detailsContainer__detail"><span class="card__detailsContainer__detail__number">{{property().squareMeters}}</span></div>
+        @if(property().numberOfDepartaments==undefined){
+          <div class="card__detailsContainer__detail"><img src="/assets/iconos/betsIcon.svg" alt=""><span class="card__detailsContainer__detail__number">{{property().numberOfBedrooms}}</span></div>
+          <div class="card__detailsContainer__detail"><img src="/assets/iconos/bathroomIcon.svg" alt=""><span class="card__detailsContainer__detail__number">{{property().numberOfBathroomsNumber}}</span></div>  
+        }@else {
+          <div class="card__detailsContainer__detail"><img src="/assets/iconos/buildingIcon.svg" alt=""><span class="card__detailsContainer__detail__number">{{property().numberOfDepartaments}}</span></div>
+          <div class="card__detailsContainer__detail"><span class="card__detailsContainer__detail__state">{{property().state}}</span></div> 
+        }
+        <div class="card__detailsContainer__detail"><img src="/assets/iconos/rulerIcon.svg" alt=""><span class="card__detailsContainer__detail__number">{{property().squareMeters}}m2</span></div>
     </div>
-   
+   <div class="card__locationContainer">
+        <p class="card__locationContainer__text">{{property().location}}</p>
+   </div>
 </div>
