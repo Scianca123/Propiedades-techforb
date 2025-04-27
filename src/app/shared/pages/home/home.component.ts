@@ -6,10 +6,11 @@ import { DbServiceService } from '../../utils/servicesJsons/db-service.service';
 import { Property } from '../../../features/properties/interfaces/property';
 import { CardInformationComponent } from '../../components/card-information/card-information.component';
 import { ExplorerSeccionComponent } from '../../components/explorer-seccion/explorer-seccion.component';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
   selector: 'app-home',
-  imports: [HeaderComponent,MainSectionComponent,CardInformationComponent,ExplorerSeccionComponent],
+  imports: [HeaderComponent,MainSectionComponent,CardInformationComponent,ExplorerSeccionComponent,FooterComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

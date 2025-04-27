@@ -1,0 +1,68 @@
+@import '../../../../styles/variables';
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 378px;
+    max-height: 378px;
+    background-image: url('/assets/images/footerImg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center 39%;
+    
+    &__overlay{
+        position: absolute;
+        background-color: rgba(54, 81, 150, 0.5); 
+        z-index: 0; 
+        width: 100%;
+        height: 378px; 
+    }
+    &__head-container{
+        
+        padding-top: 50px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        z-index: 1; 
+        &__nav{
+            display: flex;
+            gap: 62px;
+            &__list{
+                display: flex;
+                flex-direction: column;
+                list-style: none; 
+                padding: 0;
+                margin: 0; 
+                gap: 20px;
+                &__itemHead{
+                    text-decoration: none; 
+                    color: $color-logo;  
+                    font-family: $font-heading;
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+                &__item{
+                    text-decoration: none; 
+                    color: $color-logo;  
+                    font-family: $font-heading;
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+            }
+          
+        }
+    }
+    &__social-container{
+        z-index: 1;
+        border-top: solid 0.8px $color-logo; 
+        margin-top: 90px;
+        &__text{
+            color: $color-white;  
+            font-family: $font-heading;
+            font-weight: $font-weight;
+            font-size: 14px;
+        }
+    }
+}
