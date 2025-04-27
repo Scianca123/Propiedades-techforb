@@ -1,14 +1,6 @@
 <app-header></app-header>
 <app-main-section></app-main-section>
-<section class="seccion-explore">
-    <h1 class="seccion-explore__title">
-        Explora nuestras propiedades exclusivas.
-    </h1>
-    <p class="seccion-explore__label">
-        Las propiedades que buscás, en un solo lugar
-    </p>
-    <app-carousel [properties]="getAllDepartaments()"></app-carousel>
-</section>
+<app-explorer-seccion [propertis]="getAllDepartaments()" [title]="'Explora nuestras propiedades exclusivas.'" [label]="'Las propiedades que buscás, en un solo lugar'"></app-explorer-seccion>
 <section class="seccion-information">
     <div class="seccion-information__container-img">
         <h2 class="seccion-information__container-img__title">Tu propiedad soñada, a solo un click!</h2>
@@ -21,3 +13,4 @@
         <app-card-information [title]="'Seguridad y Tranquilidad'" [description]="'Tu seguridad y la de tu familia'" [urlImage]="'/assets/iconos/HomeIcon.svg'"></app-card-information>
     </div>
 </section>
+<app-explorer-seccion [propertis]="getAllBuildings()" [title]="'Oportunidades de inversión'" [label]="'Explora Nuestra Oferta de Complejos Residenciales'"></app-explorer-seccion>

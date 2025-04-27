@@ -5,10 +5,11 @@ import { CarouselComponent } from '../../components/carousel/carousel.component'
 import { DbServiceService } from '../../utils/servicesJsons/db-service.service';
 import { Property } from '../../../features/properties/interfaces/property';
 import { CardInformationComponent } from '../../components/card-information/card-information.component';
+import { ExplorerSeccionComponent } from '../../components/explorer-seccion/explorer-seccion.component';
 
 @Component({
   selector: 'app-home',
-  imports: [HeaderComponent,MainSectionComponent,CarouselComponent,CardInformationComponent],
+  imports: [HeaderComponent,MainSectionComponent,CardInformationComponent,ExplorerSeccionComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
