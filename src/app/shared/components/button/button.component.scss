@@ -58,6 +58,18 @@
       color: $color-default-hover;
     }
   }
+
+  &--authWith{
+    
+    height: 44px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid $color-border-button-authWith;
+    color:$color-blue-dark;
+    font-size: 13px;
+    line-height: 113%;
+    vertical-align: middle;
+  }
   //temes
   &--dark{
     color: $color-black;

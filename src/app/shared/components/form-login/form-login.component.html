@@ -1,3 +1,28 @@
-<div>
-    <app-cross-closure></app-cross-closure>
+<div class="form-login">
+    <div class="form-login__container-cross">
+      <app-cross-closure></app-cross-closure>  
+    </div>
+    
+    @if(changeContent=='login'){
+        <div class="form-login__container-logo">
+            <img src="/assets/iconos/LOGOIconBlue.svg" alt="">
+        </div> 
+        <label for="" class="form-login__label">Elige como quieres ingresar</label>
+        <div class="form-login__buttons-container">
+            <app-button variant="authWith">
+                <img src="/assets/iconos/FacebookIconColors.svg" alt="" class="form-login__buttons-container__icon">
+                <span>Continuar con Facebook</span>
+            </app-button>
+            <app-button variant="authWith">
+                <img src="/assets/iconos/GoogleIconColors.svg" alt="" class="form-login__buttons-container__icon">
+                <span>Continuar con Google</span>
+            </app-button>
+            <app-button variant="authWith">
+                Otro método
+            </app-button> 
+        </div>
+        <p class="form-login__text-terms">Al iniciar sesión, aceptas los Términos y Condiciones, Declaraciones, Política de Protección de Datos y Política de Privacidad.</p>
+    }
+    
+    
 </div>

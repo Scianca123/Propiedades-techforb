@@ -1,8 +1,5 @@
 <app-pop-up [disabled]="!isPopUpVisible">
-    @if(popUpContent=='login'){
-        <app-form-login  (changeContent)="onChangePopUpContent($event)></app-form-login>
-    }
-
+        <app-form-login></app-form-login>
 </app-pop-up>
 <app-header></app-header>
 <app-main-section></app-main-section>

@@ -19,7 +19,7 @@ import { AuthService } from '../../../core/services/auth.service';
 export class HomeComponent {
   propertis: Property[] =[];
   isPopUpVisible: boolean = false;
-  popUpContent: string = 'login';
+  popUpContent: 'login'|'loginGoogle' = 'login';
   constructor(private dbService:DbServiceService,private authService: AuthService){}
 
   ngOnInit(): void {

@@ -10,7 +10,7 @@ export class ButtonComponent {
   /** Tamaño del botón */
   size = input<'small' | 'medium' | 'large'>();
   /** Variante del botón */
-  variant = input<'primary' | 'secondary'| 'terciario' >();
+  variant = input<'primary' | 'secondary'| 'terciario'|'authWith' >();
   teme= input<'dark'|'light'|'of'>();
   disabled = input<boolean>(false);
   clicked= output<void>();

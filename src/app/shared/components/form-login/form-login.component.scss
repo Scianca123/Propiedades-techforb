@@ -1,0 +1,51 @@
+@import '../../../../styles/variables';
+.form-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 393px;
+    width: 440px;
+    margin-top: 15px;
+    &__container-cross{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        left: -10px;
+        top: 30px;
+    }
+    &__buttons-container{
+        width: 400px;
+    }
+    &__label{
+        color: $color-default;
+        font-family: $font-heading;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 130%;
+        vertical-align: middle;
+        margin-bottom: 40px;
+    }
+    &__container-logo{
+        margin-bottom: 60px;
+    }
+    &__buttons-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &__icon{
+            position: absolute;
+            left: 15px;
+        }
+    }
+    &__text-terms{
+        text-align: center;
+        color:$color-label-gray;
+        font-size: 10px;
+        font-weight: $font-weight;
+        line-height: 130%;
+        vertical-align: middle;
+        max-width: 80%;
+    }
+     
+}
