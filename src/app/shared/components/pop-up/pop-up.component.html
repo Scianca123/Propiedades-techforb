@@ -3,7 +3,7 @@
 disabled() ? 'popUp--disabled' : ''
 ]"
 >
-    <div class="popUp__overlay"></div>
+    <div class="popUp__overlay" (click)="onOverlayClick()"></div>
     <div class="popUp__content">
         <ng-content></ng-content>
     </div>

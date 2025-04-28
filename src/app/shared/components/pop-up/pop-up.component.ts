@@ -1,4 +1,5 @@
 import { Component, input } from '@angular/core';
+import { AuthService } from '../../../core/services/auth.service';
 
 @Component({
   selector: 'app-pop-up',
@@ -8,4 +9,8 @@ import { Component, input } from '@angular/core';
 })
 export class PopUpComponent {
   disabled= input.required<boolean>();
+  constructor(private authService: AuthService){}
+  onOverlayClick(): void {
+    this.authService.closePopUp(); 
+  }
 }

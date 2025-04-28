@@ -17,9 +17,8 @@ export class ButtonComponent {
 
 
   onClick() {
-  if (!this.disabled) {
-    this.clicked.emit();
-    
-  }
+    if (!this.disabled) {
+      this.clicked.emit();
+    }
   }
 }
