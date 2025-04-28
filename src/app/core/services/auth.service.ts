@@ -5,9 +5,10 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
+  private isAuthenticatedState = false; // Estado de autenticación
+
   private popUpState = new BehaviorSubject<boolean>(false); 
   popUpState$ = this.popUpState.asObservable();
-
   private popUpContentState = new BehaviorSubject<'login'|'loginGoogle'>('login'); 
   popUpContentState$ = this.popUpContentState.asObservable();
   constructor() {}
@@ -22,5 +23,16 @@ export class AuthService {
 
   setPopUpContent(content: 'login'|'loginGoogle'): void {
     this.popUpContentState.next(content); // Cambia el contenido del pop-up
+  }
+  login(): void {
+    this.isAuthenticatedState = true; // Marca al usuario como autenticado
+  }
+
+  logout(): void {
+    this.isAuthenticatedState = false; // Marca al usuario como no autenticado
+  }
+
+  isAuthenticated(): boolean {
+    return this.isAuthenticatedState; // Devuelve el estado de autenticación
   }
 }

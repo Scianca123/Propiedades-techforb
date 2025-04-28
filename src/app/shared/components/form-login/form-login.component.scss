@@ -107,6 +107,10 @@
             padding-top: 10px;
             padding-bottom: 10px;
             gap: 10px;
+            cursor: pointer;
+            &:hover{
+                background-color: $color-gray-100;
+            }
             &__data{
                 &__name{
                 margin: 0;

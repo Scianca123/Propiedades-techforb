@@ -1,6 +1,4 @@
 <div class="form-login">
-    
-    
     @if(changeContentValue==='login'){
         <div class="form-login__container-cross">
             <app-cross-closure></app-cross-closure>  
@@ -34,29 +32,20 @@
             <p class="form-login__titleGoogle__textLabel">Para continuar a LOGO</p>
         </div>
         <div class="form-login__usersGoogle">
-            <div class="form-login__usersGoogle__user">
-                <img src="/assets/iconos/userIconExampleA.svg" alt="">
-                <div class="form-login__usersGoogle__user__data">
-                    <p class="form-login__usersGoogle__user__data__name">
-                        Agustin
-                    </p>
-                    <span class="form-login__usersGoogle__user__data__email">
-                        Agustin81&#64;gmail.com
-                    </span>
+            @for(account of accounts;track account.email){
+                <div class="form-login__usersGoogle__user" (click)="onUserLogin()">
+                    <img [src]="account.urlImg" alt="">
+                    <div class="form-login__usersGoogle__user__data">
+                        <p class="form-login__usersGoogle__user__data__name">
+                            {{account.name}}
+                        </p>
+                        <span class="form-login__usersGoogle__user__data__email">
+                            {{account.email}}
+                        </span>
+                    </div>
                 </div>
-            </div>
-            <div class="form-login__usersGoogle__user">
-                <img src="/assets/iconos/userIconExampleM.svg" alt="">
-                <div class="form-login__usersGoogle__user__data">
-                    <p class="form-login__usersGoogle__user__data__name">
-                        Agustin
-                    </p>
-                    <span class="form-login__usersGoogle__user__data__email">
-                        Agustin81&#64;gmail.com
-                    </span>
-                </div>
-            </div>
-            <div class="form-login__usersGoogle__user">
+            }
+            <div class="form-login__usersGoogle__user" (click)="onUserLogin()">
                 <img src="/assets/iconos/userIconExample.svg" alt="">
                 <div class="form-login__usersGoogle__user__data">
                     <p class="form-login__usersGoogle__user__data__name">
