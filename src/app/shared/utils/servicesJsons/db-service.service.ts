@@ -17,6 +17,7 @@ export class DbServiceService {
     state:'En construccion',
     price:200000,
     img:'https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    typeOfBusiness:'alquilar',
     numberOfBedrooms:4,
     numberOfBathroomsNumber:2,
     numberOfDepartaments:undefined
@@ -28,6 +29,7 @@ export class DbServiceService {
     state:'En construccion',
     price:300000,
     img:'https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    typeOfBusiness:'alquilar',
     numberOfBedrooms:4,
     numberOfBathroomsNumber:2,
     numberOfDepartaments:undefined
@@ -39,6 +41,7 @@ export class DbServiceService {
     state:'En construccion',
     price:400000,
     img:'https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    typeOfBusiness:'alquilar',
     numberOfBedrooms:4,
     numberOfBathroomsNumber:2,
     numberOfDepartaments:undefined
@@ -50,6 +53,7 @@ export class DbServiceService {
     state:'En construccion',
     price:500000,
     img:'https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    typeOfBusiness:'alquilar',
     numberOfBedrooms:4,
     numberOfBathroomsNumber:2,
     numberOfDepartaments:undefined
@@ -61,6 +65,7 @@ export class DbServiceService {
     state:'En construccion',
     price:600000,
     img:'https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    typeOfBusiness:'alquilar',
     numberOfBedrooms:4,
     numberOfBathroomsNumber:2,
     numberOfDepartaments:undefined
@@ -72,6 +77,7 @@ export class DbServiceService {
     state:'En construccion',
     price:200000,
     img:'https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    typeOfBusiness:'alquilar',
     numberOfBedrooms:4,
     numberOfBathroomsNumber:2,
     numberOfDepartaments:undefined
@@ -83,6 +89,7 @@ export class DbServiceService {
     state:'En construccion',
     price:300000,
     img:'https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    typeOfBusiness:'alquilar',
     numberOfBedrooms:4,
     numberOfBathroomsNumber:2,
     numberOfDepartaments:undefined
@@ -94,6 +101,7 @@ export class DbServiceService {
     state:'En construccion',
     price:400000,
     img:'https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    typeOfBusiness:'comprar',
     numberOfBedrooms:4,
     numberOfBathroomsNumber:2,
     numberOfDepartaments:undefined
@@ -105,6 +113,7 @@ export class DbServiceService {
     state:'En construccion',
     price:500000,
     img:'https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    typeOfBusiness:'comprar',
     numberOfBedrooms:4,
     numberOfBathroomsNumber:2,
     numberOfDepartaments:undefined
@@ -116,6 +125,7 @@ export class DbServiceService {
     state:'En construccion',
     price:600000,
     img:'https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    typeOfBusiness:'comprar',
     numberOfBedrooms:4,
     numberOfBathroomsNumber:2,
     numberOfDepartaments:undefined
@@ -127,6 +137,7 @@ export class DbServiceService {
     state:'En construccion',
     price:200000,
     img:'https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    typeOfBusiness:'alquilar',
     numberOfDepartaments:2,
     numberOfBedrooms:undefined,
     numberOfBathroomsNumber:undefined
@@ -138,6 +149,7 @@ export class DbServiceService {
     state:'En construccion',
     price:300000,
     img:'https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    typeOfBusiness:'alquilar',
     numberOfDepartaments:2,
     numberOfBedrooms:undefined,
     numberOfBathroomsNumber:undefined
@@ -149,6 +161,7 @@ export class DbServiceService {
     state:'En construccion',
     price:400000,
     img:'https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    typeOfBusiness:'alquilar',
     numberOfDepartaments:2,
     numberOfBedrooms:undefined,
     numberOfBathroomsNumber:undefined
@@ -160,6 +173,7 @@ export class DbServiceService {
     state:'En construccion',
     price:500000,
     img:'https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    typeOfBusiness:'alquilar',
     numberOfDepartaments:2,
     numberOfBedrooms:undefined,
     numberOfBathroomsNumber:undefined
@@ -171,6 +185,7 @@ export class DbServiceService {
     state:'En construccion',
     price:600000,
     img:'https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60' ,
+    typeOfBusiness:'comprar',
     numberOfDepartaments:2,
     numberOfBedrooms:undefined,
     numberOfBathroomsNumber:undefined
@@ -182,6 +197,7 @@ export class DbServiceService {
     state:'En construccion',
     price:200000,
     img:'https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    typeOfBusiness:'alquilar',
     numberOfDepartaments:2,
     numberOfBedrooms:undefined,
     numberOfBathroomsNumber:undefined
@@ -193,6 +209,7 @@ export class DbServiceService {
     state:'En construccion',
     price:300000,
     img:'https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    typeOfBusiness:'alquilar',
     numberOfDepartaments:2,
     numberOfBedrooms:undefined,
     numberOfBathroomsNumber:undefined
@@ -204,6 +221,7 @@ export class DbServiceService {
     state:'En construccion',
     price:400000,
     img:'https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    typeOfBusiness:'alquilar',
     numberOfDepartaments:2,
     numberOfBedrooms:undefined,
     numberOfBathroomsNumber:undefined
@@ -215,6 +233,7 @@ export class DbServiceService {
     state:'En construccion',
     price:500000,
     img:'https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    typeOfBusiness:'alquilar',
     numberOfDepartaments:2,
     numberOfBedrooms:undefined,
     numberOfBathroomsNumber:undefined
@@ -226,6 +245,7 @@ export class DbServiceService {
     state:'En construccion',
     price:600000,
     img:'https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    typeOfBusiness:'alquilar',
     numberOfDepartaments:2,
     numberOfBedrooms:undefined,
     numberOfBathroomsNumber:undefined
@@ -238,10 +258,16 @@ export class DbServiceService {
   getPropertyById(id: number): Property | Department|Building | undefined {
     return this.propertis.find(property => property.id === id);
   }
-  getAllDepartaments(){
+  getAllDepartaments(typeOfBusiness?:'alquilar'|'comprar'){
+    if(typeOfBusiness!=undefined){
+      return this.propertis.filter((property:Property|Department|Building) => property.numberOfBedrooms!==undefined && property.numberOfBathroomsNumber!=undefined && property.typeOfBusiness==typeOfBusiness) as Property[];
+    }
     return this.propertis.filter((property:Property|Department|Building) => property.numberOfBedrooms!==undefined && property.numberOfBathroomsNumber!=undefined ) as Property[];
   }
-  getAllBuildings(){
+  getAllBuildings(typeOfBusiness?:'alquilar'|'comprar'){
+    if(typeOfBusiness!=undefined){
+      return this.propertis.filter((property:Property|Department|Building) => property.numberOfDepartaments!==undefined && property.typeOfBusiness==typeOfBusiness) as Property[];
+    }
     return this.propertis.filter((property:Property|Department|Building) => property.numberOfDepartaments!==undefined ) as Property[];
   }
 }

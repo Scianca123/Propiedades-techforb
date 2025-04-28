@@ -9,6 +9,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 import { PopUpComponent } from '../../components/pop-up/pop-up.component';
 import { FormLoginComponent } from '../../components/form-login/form-login.component';
 import { AuthService } from '../../../core/services/auth.service';
+import { PropertiCarrucelServiceService } from '../../../features/properties/services/properti-carrucel-service.service';
 
 @Component({
   selector: 'app-home',
@@ -17,25 +18,33 @@ import { AuthService } from '../../../core/services/auth.service';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  propertis: Property[] =[];
+
+  departaments: Property[] =[];
+  buildings: Property[] =[];
   isPopUpVisible: boolean = false;
   popUpContent: 'login'|'loginGoogle' = 'login';
-  constructor(private dbService:DbServiceService,private authService: AuthService){}
+  typeOfBusiness: 'comprar' | 'alquilar' = 'alquilar'; 
+  constructor(private dbService:DbServiceService,private authService: AuthService,private propertiCarrucelService: PropertiCarrucelServiceService){}
 
   ngOnInit(): void {
+    this.departaments=this.dbService.getAllDepartaments(this.typeOfBusiness)
     this.authService.popUpState$.subscribe((state) => {
       this.isPopUpVisible = state; 
     });
     this.authService.popUpContentState$.subscribe((content) => {
       this.popUpContent = content;
     });
+    this.propertiCarrucelService.typeOfBusiness$.subscribe((type) => {
+      this.typeOfBusiness = type;
+      this.updateProperties();
+    });
+    
   }
-  getAllDepartaments():Property[]{
-    return this.dbService.getAllDepartaments();
+  updateProperties(): void {
+    this.departaments = this.dbService.getAllDepartaments(this.typeOfBusiness);
+    this.buildings = this.dbService.getAllBuildings(this.typeOfBusiness);
   }
-  getAllBuildings():Property[]{
-    return this.dbService.getAllBuildings();
-  }
+  
   onChangePopUpContent(content: 'login'|'loginGoogle'): void {
     this.authService.setPopUpContent(content); // Actualiza el contenido del pop-up
   }
