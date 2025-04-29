@@ -1,7 +1,7 @@
 @import '../../../../styles/variables';
-.card-total{
-    flex: 1;
+.card-total{ 
     display: flex;
+    flex: 1 1 0;
     justify-content: space-between;
     border: 1px solid $color-gray-300;
     background-color: #ffffff;

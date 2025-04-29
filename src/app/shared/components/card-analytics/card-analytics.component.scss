@@ -1,0 +1,32 @@
+@import '../../../../styles/variables';
+.card-analytics{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #F6F5F6;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    
+    &__header{
+        display: flex;
+        height: 89px;
+        border-bottom: 0.5px solid $color-gray-primary;
+        justify-content: space-between;
+        align-items: center;
+        
+        &__title{ 
+            margin: 0 0 0 10px;
+        }
+        &__options{
+            margin: 0 10px 0 0;
+        }
+    }
+    &__content{
+        height: 85%;
+        width: 100%; /* Asegura que el contenido ocupe todo el ancho disponible */
+        display: flex;
+        justify-content: center; /* Centra el gráfico si es necesario */
+        align-items: center;
+    }
+}
