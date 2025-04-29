@@ -7,6 +7,11 @@ import { BehaviorSubject } from 'rxjs';
 export class AuthService {
   private isAuthenticatedState = false; // Estado de autenticación
 
+  private userIcon= new BehaviorSubject<string>("assets/iconos/userperfilExample.jpg"); 
+  userIcon$ = this.userIcon.asObservable(); 
+  private userName= new BehaviorSubject<string>('Agustin');
+  userName$ = this.userName.asObservable();
+
   private popUpState = new BehaviorSubject<boolean>(false); 
   popUpState$ = this.popUpState.asObservable();
   private popUpContentState = new BehaviorSubject<'login'|'loginGoogle'>('login'); 

@@ -1,0 +1,9 @@
+.total-data{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: stretch;
+    height: auto; /* Cambia a auto si no necesitas una altura fija */
+    width: 100%;
+    flex-wrap: wrap; 
+}
