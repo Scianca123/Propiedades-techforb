@@ -1,0 +1,9 @@
+   <div class="dotspager">
+    @for(page of pages; track page ) {
+            <div class="dotspager__dot"
+            [class.dotspager__dot--selected]="page === currentPage"
+            (click)="onClick(page)"
+            >
+            </div>
+        }
+   </div>     

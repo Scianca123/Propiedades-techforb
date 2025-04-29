@@ -1,0 +1,92 @@
+@import '../../../../styles/variables';
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 228.85px;
+    height: 299.58px;
+    background-color: $color-logo;
+    box-shadow: $box-shadow-card;
+    // box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.50);
+
+    border-radius: 3.47px;
+    &__title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 15px;
+        margin-right: 15px;
+        &__text{
+            font-family: $font-heading;
+            font-weight: $font-weight;
+            font-size: 11.1px;
+            line-height: 100%;
+            vertical-align: middle;
+        }
+        &__price{
+            font-weight: 500;
+            font-size: 13.87px;
+            line-height: 100%;
+            vertical-align: middle;
+            color: $color-black;
+        }
+    }
+    &__imgContainer{
+        width: 229px; 
+        height: 200px; 
+        overflow: hidden; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom-right-radius:12.48px ;
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__detailsContainer{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 15px;
+        margin-right: 15px;
+        &__detail{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 53.84px;
+            height: 21.96px;
+            max-width:53.84px ;
+            max-height: 53.84px;
+            background-color: $color-background-light;
+            border-radius: 7.8px;
+            gap:2.83px;
+            padding: 3px;
+            &__number{
+                font-family: $font-heading;
+                font-weight: $font-weight;
+                font-size: $font-size-number-details;
+                line-height: 100%;
+                vertical-align: middle;
+                
+            }
+            &__state{
+                font-family: $font-heading;
+                font-weight: $font-weight;
+                color: $color-default;
+                font-size: $fonr-size-state-details;
+            }
+        }
+    }
+    &__locationContainer{
+        margin-left: 15px;
+        margin-right: 15px;
+        &__text{
+            font-family: $font-heading;
+            font-weight: $font-weight;
+            font-size: 9.71px;
+            line-height: 100%;
+            vertical-align: middle;
+            color: $color-gray-primary;
+        }
+    }
+}

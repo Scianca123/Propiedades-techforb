@@ -1,0 +1,23 @@
+@import "../../../../styles/variables";
+
+.header{
+    height: 200px;
+    width: 80%;
+    background-color: transparent;
+    position: absolute;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 10%;
+    right: 10%;
+    z-index: 3;
+    &__logo{
+        font-family: $font-heading;
+        font-weight: 600;
+        font-size: 34.5px;
+        line-height: 130%;
+        color: $color-logo;
+        font-style: normal;
+    }
+}

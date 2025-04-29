@@ -1,0 +1,8 @@
+ <div class="caroucel">
+    <div class="caroucel__container">
+        @for(property of visibleProperties;track property.id){
+            <app-card [property]="property"></app-card> 
+        }   
+    </div>
+    <app-dotspager [itemsPerPage]="itemsPerPage" [totalItems]="properties().length"  (pageChange)="onPageChange($event)"></app-dotspager>
+</div>

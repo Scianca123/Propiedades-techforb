@@ -1,0 +1,116 @@
+@import '../../../../styles/variables';
+
+
+.btn{
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius:4px;
+    transition: all $transition-base;
+    cursor: pointer;
+    border: 1px solid transparent;
+    position: relative;
+    font-weight: $font-weight-button;
+    font-family: $font-heading;
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+   
+      &__label {
+        display: contents;
+        white-space: nowrap;
+      }
+
+
+// Variants (Modifiers)
+  &--primary {
+    background-color: $color-default;
+    color: $color-white;
+    border-radius: $radius-base;
+    &:hover:not(.btn--disabled) {
+      background-color: $color-default-hover;
+    }
+  }
+ 
+  &--secondary {
+    min-width: 100px;
+    background-color: transparent;
+    color: $color-white;
+    border: 2px solid $color-white;
+    border-radius: $radius-button-secondary;
+    &:hover:not(.btn--disabled) {
+      background-color: $color-default-hover;
+      border: none;
+    }
+  }
+
+  &--terciario {
+    min-width: 100px;
+    background-color: transparent;
+    color: $color-white;
+    border:none;
+    &:hover:not(.btn--disabled) {
+      color: $color-default-hover;
+    }
+  }
+
+  &--authWith{
+    
+    height: 44px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid $color-border-button-authWith;
+    color:$color-blue-dark;
+    font-size: 13px;
+    line-height: 113%;
+    vertical-align: middle;
+    &:hover{
+      background-color:$color-border-button-authWith;
+    }
+  }
+  //temes
+  &--dark{
+    color: $color-black;
+    border-color: $color-black;
+  }
+  &--light{
+    background-color: $color-logo;
+    &:hover:not(.btn--disabled) {
+      background-color: $color-white;
+    }
+  }
+  &--of{
+    color: $color-gray-primary;
+  }
+ 
+  // Sizes (Modifiers)
+  &--small {
+    padding: 5px 10px 5px 10px;
+    font-size: 11px;
+    min-height: 28px;
+  }
+ 
+  &--medium {
+    padding: 10px 15px 10px 15px;
+    font-size: 14px;
+    min-height: 36px;
+  }
+ 
+  &--large {
+    padding: 15px 50px 15px 50px;
+    font-size: 18px;
+    min-height: 44px;
+  }
+ 
+  // State (Modifier)
+  &--disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+}
