@@ -1,0 +1,66 @@
+// 1. TIPOGRAFÍA
+$font-heading: "Poppins", sans‑serif;
+$font-body: "Montserrat", sans‑serif;
+
+//sizes 
+$line-height: 1.15;
+$font-weight: 400;
+$size-title-h2:28px;
+$font-weight-button: 600;
+$font-weight-h1: 600;
+$font-size-h1:36px;
+$font-size-number-details:7.8px;
+$fonr-size-state-details:6px;
+
+// PALETA DE COLORES
+$color-default: #365196;
+$color-default-hover: rgb(47, 44, 148);
+// $color-default-press: #161041;
+$color-white: #f5f4f4;
+$color-default-disabled: rgba(46, 36, 115, 0.3);
+$color-blue-card-info:#1A2E62;
+$color-background: #F8F9FB;
+$color-logo:#FCFCFC;
+$color-label-gray:#838383;
+$color-background-light:#F8F9FB;
+$color-turquoise:#dfe8f8;
+$color-blue-dark:#545F71;
+$color-border-button-authWith:#E0E0E0;
+
+$color-black:#020202;
+$color-pink:#F5F7FA;
+$color-green: #04d9b2;
+$color-red: #cb4141;
+$color-dark: #1f2937;
+$color-gray-primary:#8A8A8A;
+$color-dark-gray: #4b5563;
+$color-gray-100: #f2f2f2;
+$color-gray-200: #d1d5db;
+$color-gray-300: #F6F5F6;
+// $color-background: #fcfcfc;
+
+
+$color-success: #28a745;
+$color-error: #cb4141;
+$color-warning: #ffc107;
+
+//Radius
+
+$radius-base: 5px;
+$radius-button-secondary:35px;
+
+//transition
+
+$transition-base: 0.2s ease-in-out;
+
+//Box shadow
+$box-shadow-card:0px 4.16px 8.32px rgba(106, 100, 166, 0.1),
+                 0px 15.95px 15.95px rgba(106, 100, 166, 0.09),
+                 0px 35.37px 20.8px rgba(106, 100, 166, 0.05),
+                 0px 62.41px 24.97px rgba(106, 100, 166, 0.01),
+                 0px 97.78px 24.74px rgba(106, 100, 166, 0);
+
+
+//spacing
+
+$spacing: 0.25rem;

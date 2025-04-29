@@ -1,0 +1,29 @@
+<div class="selector-toggle">
+  <div class="selector-toggle__right"
+  [class.selector-toggle__right--active]="selected === 'comprar'"
+   (click)="select('comprar')"
+  >
+    <app-button
+      variant="terciario" 
+      size="small"
+      [teme]="selected === 'comprar' ? 'dark' : 'of'"
+      >
+    Comprar
+    </app-button>
+  </div>
+  <div class="selector-toggle__left"
+   [class.selector-toggle__left--active]="selected === 'alquilar'"
+   (click)="select('alquilar')"
+  >
+    <app-button
+      variant="terciario" 
+      size="small"
+      [teme]="selected === 'alquilar' ? 'dark' : 'of'"
+      >
+      Alquilar
+    </app-button>
+  </div>
+    <div class="selector-toggle__bar"
+         [style.left.%]="selected === 'comprar' ? 6.5: 57.1"></div>
+
+  </div>

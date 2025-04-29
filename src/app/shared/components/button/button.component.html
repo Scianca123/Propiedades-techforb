@@ -1,0 +1,21 @@
+<button
+class="btn"  
+[class]="[
+'btn',
+'btn--' + variant(),
+'btn--' + size(),
+'btn--' + teme(),
+disabled() ? 'btn--disabled' : ''
+].join(' ')"
+[disabled]="disabled()"
+(click)="onClick()"
+    >
+    <div class="btn__content">
+        <span class="btn__label">
+          <ng-content></ng-content>
+        </span>
+    </div>
+
+
+</button>
+
