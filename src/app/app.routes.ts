@@ -7,7 +7,7 @@ import { DashboardHomeComponentComponent } from './shared/pages/dashboard-home-c
 export const routes: Routes = [
       {
         path:"",
-        component: HomeComponent,
+        component: DashboardComponent,
       },
       {
         path: 'dashboard',

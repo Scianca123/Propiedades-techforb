@@ -11,7 +11,7 @@ export class DbServiceService {
    this.propertis=[
     {
     id:1,
-    titulo:'Departament',
+    titulo:'Departament1',
     squareMeters:120,
     location:'Playa del Carmen',
     state:'En construccion',
@@ -23,7 +23,7 @@ export class DbServiceService {
     numberOfDepartaments:undefined
   }as Property,{
     id:2,
-    titulo:'Departament',
+    titulo:'Departament2',
     squareMeters:150,
     location:'Tepoztlán',
     state:'En construccion',
@@ -35,7 +35,7 @@ export class DbServiceService {
     numberOfDepartaments:undefined
   }as Property,{
     id:3,
-    titulo:'Departament',
+    titulo:'Departament3',
     squareMeters:200,
     location:'Valle de Bravo',
     state:'En construccion',
@@ -47,7 +47,7 @@ export class DbServiceService {
     numberOfDepartaments:undefined
   }as Property,{
     id:4,
-    titulo:'Departament',
+    titulo:'Departament4',
     squareMeters:100,
     location:'CDMX',
     state:'En construccion',
@@ -59,7 +59,7 @@ export class DbServiceService {
     numberOfDepartaments:undefined
   }as Property,{
     id:5,
-    titulo:'Departament',
+    titulo:'Departament5',
     squareMeters:250,
     location:'Querétaro',
     state:'En construccion',
@@ -71,7 +71,7 @@ export class DbServiceService {
     numberOfDepartaments:undefined
   }as Property,{
     id:6,
-    titulo:'Departament',
+    titulo:'Departament6',
     squareMeters:120,
     location:'Playa del Carmen',
     state:'En construccion',
@@ -83,7 +83,7 @@ export class DbServiceService {
     numberOfDepartaments:undefined
   }as Property,{
     id:7,
-    titulo:'Departament',
+    titulo:'Departament7',
     squareMeters:150,
     location:'Tepoztlán',
     state:'En construccion',
@@ -95,7 +95,7 @@ export class DbServiceService {
     numberOfDepartaments:undefined
   }as Property,{
     id:8,
-    titulo:'Departament',
+    titulo:'Departament8',
     squareMeters:200,
     location:'Valle de Bravo',
     state:'En construccion',
@@ -107,7 +107,7 @@ export class DbServiceService {
     numberOfDepartaments:undefined
   }as Property,{
     id:9,
-    titulo:'Departament',
+    titulo:'Departament9',
     squareMeters:100,
     location:'CDMX',
     state:'En construccion',
@@ -119,7 +119,7 @@ export class DbServiceService {
     numberOfDepartaments:undefined
   }as Property,{
     id:10,
-    titulo:'Departament',
+    titulo:'Departament10',
     squareMeters:250,
     location:'Querétaro',
     state:'En construccion',
@@ -131,7 +131,7 @@ export class DbServiceService {
     numberOfDepartaments:undefined
   }as Property,{
     id:11,
-    titulo:'Building',
+    titulo:'Building1',
     squareMeters:120,
     location:'Playa del Carmen',
     state:'En construccion',
@@ -143,7 +143,7 @@ export class DbServiceService {
     numberOfBathroomsNumber:undefined
   }as Property,{
     id:12,
-    titulo:'Building',
+    titulo:'Building2',
     squareMeters:150,
     location:'Tepoztlán',
     state:'En construccion',
@@ -155,7 +155,7 @@ export class DbServiceService {
     numberOfBathroomsNumber:undefined
   }as Property,{
     id:13,
-    titulo:'Building',
+    titulo:'Building3',
     squareMeters:200,
     location:'Valle de Bravo',
     state:'En construccion',
@@ -167,7 +167,7 @@ export class DbServiceService {
     numberOfBathroomsNumber:undefined
   }as Property,{
     id:14,
-    titulo:'Building',
+    titulo:'Building4',
     squareMeters:100,
     location:'CDMX',
     state:'En construccion',
@@ -179,7 +179,7 @@ export class DbServiceService {
     numberOfBathroomsNumber:undefined
   }as Property,{
     id:15,
-    titulo:'Building',
+    titulo:'Building5',
     squareMeters:250,
     location:'Querétaro',
     state:'En construccion',
@@ -191,7 +191,7 @@ export class DbServiceService {
     numberOfBathroomsNumber:undefined
   }as Property,{
     id:16,
-    titulo:'Building',
+    titulo:'Building6',
     squareMeters:120,
     location:'Playa del Carmen',
     state:'En construccion',
@@ -203,7 +203,7 @@ export class DbServiceService {
     numberOfBathroomsNumber:undefined
   }as Property,{
     id:17,
-    titulo:'Building',
+    titulo:'Building7',
     squareMeters:150,
     location:'Tepoztlán',
     state:'En construccion',
@@ -215,7 +215,7 @@ export class DbServiceService {
     numberOfBathroomsNumber:undefined
   }as Property,{
     id:18,
-    titulo:'Building',
+    titulo:'Building8',
     squareMeters:200,
     location:'Valle de Bravo',
     state:'En construccion',
@@ -227,7 +227,7 @@ export class DbServiceService {
     numberOfBathroomsNumber:undefined
   }as Property,{
     id:19,
-    titulo:'Building',
+    titulo:'Building9',
     squareMeters:100,
     location:'CDMX',
     state:'En construccion',
@@ -239,7 +239,7 @@ export class DbServiceService {
     numberOfBathroomsNumber:undefined
   }as Property,{
     id:20,
-    titulo:'Building',
+    titulo:'Building10',
     squareMeters:250,
     location:'Querétaro',
     state:'En construccion',
