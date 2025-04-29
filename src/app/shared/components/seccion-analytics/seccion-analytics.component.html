@@ -1,0 +1,32 @@
+<section class="seccion-analytics">
+    <div class="seccion-analytics__top">
+        <div class="seccion-analytics__top__left">
+           <app-card-analytics [title]="'Revenue Analytics'"> 
+                <select class="seccion-analytics__top__left__select" option>
+                    <option value="Monthly">Monthly</option>
+                    <option value="Yearly">Yearly</option>
+                </select>
+          <app-chart content  style="width: 100%;">contenido</app-chart></app-card-analytics> 
+        </div>
+        <div class="seccion-analytics__top__right">
+            <app-card-analytics [title]="'Sales Data'"> 
+                <select class="seccion-analytics__top__left__select" option>
+                    <option value="Monthly">Monthly</option>
+                    <option value="Yearly">Yearly</option>
+                </select><p content>contenido</p>
+            </app-card-analytics> 
+        </div>
+       
+    </div>
+    <div class="seccion-analytics__bottom">
+        <div class="seccion-analytics__bottom__left">
+            <app-card-analytics [title]="'Area Map'"> <p option class="optionExample">Last update 5 days ago</p><p content>contenido</p></app-card-analytics>
+        </div>
+        <div class="seccion-analytics__bottom__medium">
+            <app-card-analytics [title]="'Recent Transections'"> <p option>View orders</p><p content>contenido</p></app-card-analytics>
+        </div>
+        <div class="seccion-analytics__bottom__right">
+            <app-card-analytics [title]="'Area Map'"> <p option>See More</p><p content>contenido</p></app-card-analytics>
+        </div>
+    </div>
+</section>

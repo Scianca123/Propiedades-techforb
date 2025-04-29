@@ -1,9 +1,13 @@
 .total-data{
-    display: flex;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 15px;
     justify-content: space-between;
     align-items: stretch;
-    height: auto; /* Cambia a auto si no necesitas una altura fija */
+    // height: auto; 
     width: 100%;
-    flex-wrap: wrap; 
+    &>*{
+        min-width: 0;
+    }
+    // flex-wrap: wrap;
 }

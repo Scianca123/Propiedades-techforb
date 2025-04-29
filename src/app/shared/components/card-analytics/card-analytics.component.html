@@ -1,0 +1,14 @@
+<div class="card-analytics">
+    <div class="card-analytics__header">
+      <h6 class="card-analytics__header__title">
+        {{title()}}
+      </h6>
+      <div class="card-analytics__header__options">
+        <ng-content select="[option]"></ng-content>
+      </div>
+      
+    </div>
+    <div class="card-analytics__content">
+        <ng-content select="[content]" class="card-analytics__content"></ng-content>
+    </div> 
+</div>

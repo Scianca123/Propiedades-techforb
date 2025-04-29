@@ -1,0 +1,16 @@
+.revenue-analytics {
+    background: transparent;
+    width: 100%;
+
+    &__body {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      overflow: hidden;
+    }
+    p-chart {
+        width: 100%; /* Ajusta el gráfico al ancho del contenedor */
+        height: auto; /* Mantiene la proporción del gráfico */
+        max-width: 100%; /* Evita que el gráfico sobrepase el contenedor */
+    }
+  }
